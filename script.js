@@ -11,7 +11,6 @@ function clearApp() {
   app.innerHTML = "";
 }
 
-/* PAGE 1 */
 function pageOne() {
   playMusic();
   clearApp();
@@ -24,7 +23,7 @@ function pageOne() {
   `;
 }
 
-/* PAGE 2 */
+
 function pageTwo() {
   clearApp();
 
@@ -80,6 +79,7 @@ function pageFive() {
 }
 
 pageOne();
+
 
 
 
