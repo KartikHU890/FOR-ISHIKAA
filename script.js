@@ -52,34 +52,23 @@ function pageThree() {
   `;
 }
 
-function pageFour() {
-  clear();
-  app.innerHTML = `
-    <img src="ishika3.jpeg" style="width:200px">
-    <p>
-      I am forever grateful to September 🌙<br>
-      Because September gave me youuu ofc.<br><br>
-      I feel the happiest with you &lt;3.<br><br>
-      So… is it a yes ISHIKAAA??? 💗
-    </p>
-    <button onclick="pageFive()">YESSSS 💕</button>
-  `;
+<img src="ishika3.jpeg" style="width:200px">
+        <p>
+            I am forever grateful to September 🌙<br>
+            Because September gave me youuu ofc.<br><br>
+            I feel the happiest with you &lt;3.<br><br>
+            So... is it a yes ISHIKAAA??? ❤️
+        </p>
+        <button onclick="pageFive()">YESSSS 💕</button>
+    `;
 }
 
 function pageFive() {
-  clear();
-  app.innerHTML = `
-    <img src="bhondu.jpg" style="width:180px">
-    <h1>FOREVER MY LUCKY CHARM &lt;33</h1>
-    <p>ISHIKAAA… 🌸<br>I love you so much.</p>
-    <button onclick="alert('You made my heart smile 💗')">
-      I love you too 🥹
-    </button>
-  `;
+    app.innerHTML = `
+        <img src="bhondu.jpg" style="width:180px">
+        <h1>FOREVER MY LUCKY CHARM &lt;3</h1>
+    `;
 }
-
-pageOne();
-
 
 
 
