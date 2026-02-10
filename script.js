@@ -1,82 +1,65 @@
 const app = document.getElementById("app");
 const music = document.getElementById("bgMusic");
 
+// play background music
 function playMusic() {
-  music.play().catch(() => {});
+  music.volume = 0.5;
+  music.play().catch(() => {
+    console.log("Autoplay blocked, will play after click");
+  });
 }
 
+// clear screen
 function clear() {
   app.innerHTML = "";
-  app.style.animation = "none";
-  app.offsetHeight;
-  app.style.animation = null;
+  app.style.animation = "fadeIn 1.2s ease";
 }
 
+// PAGE 1
 function pageOne() {
   playMusic();
   clear();
   app.innerHTML = `
-    <img src="ishika.jpeg"/> 
+    <img src="ishika.jpeg" style="width:260px; border-radius:20px;" />
     <h1>HELLOOO ISHIKAA 💗</h1>
     <p>I made something special…<br>Just for you 🌸</p>
-    <button onclick="pageTwo()">Okay…????</button>
+    <button onclick="pageTwo()">Okay...????</button>
   `;
 }
 
+// PAGE 2
 function pageTwo() {
   clear();
   app.innerHTML = `
-    <img src="ishika2.jpeg" style="width:180px">
-    <h1>BEFORE THATT-</h1>
+    <img src="ishika2.jpeg" style="width:200px; border-radius:20px;" />
+    <h1>BEFORE THAT-</h1>
     <p>Do you know you are my favorite person? 💕</p>
-    <p>Do you know you look extra good when you're with me? 👀</p>
-    <p>Do you know I feel happiest around you? 🌷</p>
-    <button onclick="pageThree()">OFCCCC</button>
+    <p>Do you know you look extra good when you're with me? 🖤</p>
+    <button onclick="pageThree()">Hmm?</button>
   `;
 }
 
+// PAGE 3
 function pageThree() {
   clear();
   app.innerHTML = `
-    <img src="ishika4.jpeg" style="width:185px">
-    <h1>UK Why You’re Special? 🌸</h1>
+    <h1>ONE LAST THING 💖</h1>
     <p>
-      You’re special because you’re just… you.<br><br>
-      You don’t pretend.<br>
-      You don’t change.<br><br>
-      And I love you a lot for being exactly the way you are 💗
+      I don’t know how to say this perfectly,<br>
+      but having you in my life makes everything softer,<br>
+      calmer… and happier 🌷
     </p>
-    <button onclick="pageFour()">Heart to heart 💌</button>
-  `;
-}
-
-function pageFour() {
-  clear();
-  app.innerHTML = `
-    <img src="ishika3.jpeg" style="width:200px">
     <p>
-      I am forever grateful to September 🌙<br>
-      Because September gave me youuu ofc.<br><br>
-      I feel the happiest with you &lt;3.<br><br>
-      So… is it a yes ISHIKAAA??? 💗
+      This little website is just a reminder<br>
+      that you matter to me. A lot. 💗
     </p>
-    <button onclick="pageFive()">YESSSS 💕</button>
+    <h2>— Yours 🤍</h2>
   `;
 }
 
-function pageFive() {
-  clear();
-  app.innerHTML = `
-    <img src="bhondu.jpg" style="width:180px">
-    <h1>FOREVER MY LUCKY CHARM &lt;33</h1>
-    <p>ISHIKAAA… 🌸<br>I love you so much.</p>
-    <button onclick="alert('You made my heart smile 💗')">
-      I love you too 🥹
-    </button>
-  `;
-}
-
+// start
 pageOne();
+
 
 
 
