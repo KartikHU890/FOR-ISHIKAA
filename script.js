@@ -38,21 +38,48 @@ function pageTwo() {
   `;
 }
 
-/* PAGE 3 */
 function pageThree() {
-  clearApp();
-
+  clear();
   app.innerHTML = `
-    <h1>Just one thing 💖</h1>
-    <p>This little website is just a reminder…</p>
-    <p>You matter to me. A lot 🫶</p>
-    <p>Always will 🌙</p>
+    <img src="ishika4.jpeg" style="width:185px">
+    <h1>UK Why You’re Special? 🌸</h1>
+    <p>
+      You’re special because you’re just… you.<br><br>
+      You don’t pretend.<br>
+      You don’t change.<br><br>
+      And I love you a lot for being exactly the way you are 💗
+    </p>
+    <button onclick="pageFour()">Heart to heart 💌</button>
   `;
 }
 
-/* load first page automatically */
-pageOne();
+function pageFour() {
+  clear();
+  app.innerHTML = `
+    <img src="ishika33.jpeg" style="width:200px">
+    <p>
+      I am forever grateful to September 🌙<br>
+      Because September gave me youuu ofc.<br><br>
+      I feel the happiest with you &lt;3.<br><br>
+      So… is it a yes ISHIKAAA??? 💗
+    </p>
+    <button onclick="pageFive()">YESSSS 💕</button>
+  `;
+}
 
+function pageFive() {
+  clear();
+  app.innerHTML = `
+    <img src="bhondu.jpg" style="width:180px">
+    <h1>FOREVER MY LUCKY CHARM &lt;33</h1>
+    <p>ISHIKAAA… 🌸<br>I love you so much.</p>
+    <button onclick="alert('You made my heart smile 💗')">
+      I love you too 🥹
+    </button>
+  `;
+}
+
+pageOne();
 
 
 
