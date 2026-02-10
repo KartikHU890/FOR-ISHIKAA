@@ -16,7 +16,7 @@ function pageOne() {
   playMusic();
   clear();
   app.innerHTML = `
-    <img src="ishika.jpeg"> style="width:150px; border-radius:12px;">
+    <img src="ishika.jpeg"> style="width:100px; border-radius:12px;">
     <h1>HELLOOO ISHIKAA 💗</h1>
     <p>I made something special…<br>Just for you 🌸</p>
     <button onclick="pageTwo()">Okay…????</button>
@@ -53,7 +53,7 @@ function pageThree() {
 function pageFour() {
   clear();
   app.innerHTML = `
-    <img src="ishika33.jpeg" style="width:200px">
+    <img src="ishika3.jpeg" style="width:200px">
     <p>
       I am forever grateful to September 🌙<br>
       Because September gave me youuu ofc.<br><br>
@@ -77,4 +77,5 @@ function pageFive() {
 }
 
 pageOne();
+
 
