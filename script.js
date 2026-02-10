@@ -56,7 +56,7 @@ function pageThree() {
 function pageFour() {
   clear();
   app.innerHTML = `
-    <img src="ishika33.jpeg" style="width:200px">
+    <img src="ishika3.jpeg" style="width:200px">
     <p>
       I am forever grateful to September 🌙<br>
       Because September gave me youuu ofc.<br><br>
@@ -80,6 +80,7 @@ function pageFive() {
 }
 
 pageOne();
+
 
 
 
