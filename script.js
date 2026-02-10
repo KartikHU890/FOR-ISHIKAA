@@ -1,64 +1,59 @@
 const app = document.getElementById("app");
 const music = document.getElementById("bgMusic");
 
-// play background music
 function playMusic() {
-  music.volume = 0.5;
-  music.play().catch(() => {
-    console.log("Autoplay blocked, will play after click");
-  });
+  if (music) {
+    music.play().catch(() => {});
+  }
 }
 
-// clear screen
-function clear() {
+function clearApp() {
   app.innerHTML = "";
-  app.style.animation = "fadeIn 1.2s ease";
 }
 
-// PAGE 1
+/* PAGE 1 */
 function pageOne() {
   playMusic();
-  clear();
+  clearApp();
+
   app.innerHTML = `
-    <img src="ishika.jpeg" style="width:260px; border-radius:20px;" />
+    <img src="ishika.jpeg" class="main-img">
     <h1>HELLOOO ISHIKAA 💗</h1>
-    <p>I made something special…<br>Just for you 🌸</p>
+    <p>I made something special...<br>Just for you 🌸</p>
     <button onclick="pageTwo()">Okay...????</button>
   `;
 }
 
-// PAGE 2
+/* PAGE 2 */
 function pageTwo() {
-  clear();
+  clearApp();
+
   app.innerHTML = `
-    <img src="ishika2.jpeg" style="width:200px; border-radius:20px;" />
+    <img src="ishika2.jpeg" class="small-img">
     <h1>BEFORE THAT-</h1>
     <p>Do you know you are my favorite person? 💕</p>
-    <p>Do you know you look extra good when you're with me? 🖤</p>
-    <button onclick="pageThree()">Hmm?</button>
+    <p>Do you know you look extra good when you're with me 🥺</p>
+    <p>Do you know I feel happiest around you 💗</p>
+    <button onclick="pageThree()">OFCCCC</button>
   `;
 }
 
-// PAGE 3
+/* PAGE 3 */
 function pageThree() {
-  clear();
+  clearApp();
+
   app.innerHTML = `
-    <h1>ONE LAST THING 💖</h1>
-    <p>
-      I don’t know how to say this perfectly,<br>
-      but having you in my life makes everything softer,<br>
-      calmer… and happier 🌷
-    </p>
-    <p>
-      This little website is just a reminder<br>
-      that you matter to me. A lot. 💗
-    </p>
-    <h2>— Yours 🤍</h2>
+    <h1>Just one thing 💖</h1>
+    <p>This little website is just a reminder…</p>
+    <p>You matter to me. A lot 🫶</p>
+    <p>Always will 🌙</p>
   `;
 }
 
-// start
+/* load first page automatically */
 pageOne();
+
+
 
 
 
