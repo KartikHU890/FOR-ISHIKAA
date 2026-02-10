@@ -2,37 +2,35 @@ const app = document.getElementById("app");
 const music = document.getElementById("bgMusic");
 
 function playMusic() {
-  if (music) {
-    music.play().catch(() => {});
-  }
+  music.play().catch(() => {});
 }
 
-function clearApp() {
+function clear() {
   app.innerHTML = "";
+  app.style.animation = "none";
+  app.offsetHeight;
+  app.style.animation = null;
 }
 
 function pageOne() {
   playMusic();
-  clearApp();
-
+  clear();
   app.innerHTML = `
-    <img src="ishika.jpeg" class="main-img">
+    <img src="ishika.jpeg">
     <h1>HELLOOO ISHIKAA 💗</h1>
-    <p>I made something special...<br>Just for you 🌸</p>
-    <button onclick="pageTwo()">Okay...????</button>
+    <p>I made something special…<br>Just for you 🌸</p>
+    <button onclick="pageTwo()">Okay…????</button>
   `;
 }
 
-
 function pageTwo() {
-  clearApp();
-
+  clear();
   app.innerHTML = `
-    <img src="ishika2.jpeg" class="small-img">
-    <h1>BEFORE THAT-</h1>
+    <img src="ishika2.jpeg" style="width:180px">
+    <h1>BEFORE THATT-</h1>
     <p>Do you know you are my favorite person? 💕</p>
-    <p>Do you know you look extra good when you're with me 🥺</p>
-    <p>Do you know I feel happiest around you 💗</p>
+    <p>Do you know you look extra good when you're with me? 👀</p>
+    <p>Do you know I feel happiest around you? 🌷</p>
     <button onclick="pageThree()">OFCCCC</button>
   `;
 }
@@ -52,25 +50,33 @@ function pageThree() {
   `;
 }
 
-<img src="ishika3.jpeg" style="width:200px">
-        <p>
-            I am forever grateful to September 🌙<br>
-            Because September gave me youuu ofc.<br><br>
-            I feel the happiest with you &lt;3.<br><br>
-            So... is it a yes ISHIKAAA??? ❤️
-        </p>
-        <button onclick="pageFive()">YESSSS 💕</button>
-    `;
+function pageFour() {
+  clear();
+  app.innerHTML = `
+    <img src="ishika3.jpeg" style="width:200px">
+    <p>
+      I am forever grateful to September 🌙<br>
+      Because September gave me youuu ofc.<br><br>
+      I feel the happiest with you &lt;3.<br><br>
+      So… is it a yes ISHIKAAA??? 💗
+    </p>
+    <button onclick="pageFive()">YESSSS 💕</button>
+  `;
 }
 
 function pageFive() {
-    app.innerHTML = `
-        <img src="bhondu.jpg" style="width:180px">
-        <h1>FOREVER MY LUCKY CHARM &lt;3</h1>
-    `;
+  clear();
+  app.innerHTML = `
+    <img src="bhondu.jpg" style="width:180px">
+    <h1>FOREVER MY LUCKY CHARM &lt;33</h1>
+    <p>ISHIKAAA… 🌸<br>I love you so much.</p>
+    <button onclick="alert('You made my heart smile 💗')">
+      I love you too 🥹
+    </button>
+  `;
 }
 
-
+pageOne();
 
 
 
