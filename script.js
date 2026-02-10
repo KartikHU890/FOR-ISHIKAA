@@ -36,7 +36,6 @@ function pageTwo() {
 }
 
 function pageThree() {
-  clear();
   app.innerHTML = `
     <img src="ishika4.jpeg" style="width:185px">
     <h1>UK Why You’re Special? 🌸</h1>
@@ -77,6 +76,7 @@ function pageFive() {
 }
 
 pageOne();
+
 
 
 
