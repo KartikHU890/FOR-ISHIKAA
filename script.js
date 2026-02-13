@@ -28,7 +28,7 @@ function pageTwo() {
   app.innerHTML = `
     <img src="ishika2.jpeg" style="width:180px">
     <h1>BEFORE THATT-</h1>
-    <p>Do you know you are my favorite person? 💕</p>
+    <p>Do you know you are my favourite person? 💕</p>
     <p>Do you know you look extra good when you're with me? 👀</p>
     <p>Do you know I feel happiest around you? 🌷</p>
     <button onclick="pageThree()">OFCCCC</button>
@@ -76,6 +76,7 @@ function pageFive() {
 }
 
 pageOne();
+
 
 
 
